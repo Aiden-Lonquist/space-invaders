@@ -7,27 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77935D1F27C07ECB001187AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77935D1E27C07ECB001187AE /* AppDelegate.swift */; };
-		77935D2127C07ECB001187AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77935D2027C07ECB001187AE /* SceneDelegate.swift */; };
-		77935D2327C07ECB001187AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77935D2227C07ECB001187AE /* ViewController.swift */; };
-		77935D2627C07ECB001187AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77935D2427C07ECB001187AE /* Main.storyboard */; };
-		77935D2827C07ECD001187AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77935D2727C07ECD001187AE /* Assets.xcassets */; };
-		77935D2B27C07ECD001187AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77935D2927C07ECD001187AE /* LaunchScreen.storyboard */; };
+		7706E3E027C09A6E0032D408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706E3DF27C09A6E0032D408 /* AppDelegate.swift */; };
+		7706E3E227C09A6E0032D408 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7706E3E127C09A6E0032D408 /* GameScene.sks */; };
+		7706E3E427C09A6E0032D408 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7706E3E327C09A6E0032D408 /* Actions.sks */; };
+		7706E3E627C09A6E0032D408 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706E3E527C09A6E0032D408 /* GameScene.swift */; };
+		7706E3E827C09A6E0032D408 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706E3E727C09A6E0032D408 /* GameViewController.swift */; };
+		7706E3EB27C09A6E0032D408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7706E3E927C09A6E0032D408 /* Main.storyboard */; };
+		7706E3ED27C09A6F0032D408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7706E3EC27C09A6F0032D408 /* Assets.xcassets */; };
+		7706E3F027C09A6F0032D408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7706E3EE27C09A6F0032D408 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		77935D1B27C07ECB001187AE /* Space Invaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Invaders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77935D1E27C07ECB001187AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77935D2027C07ECB001187AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		77935D2227C07ECB001187AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		77935D2527C07ECB001187AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		77935D2727C07ECD001187AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		77935D2A27C07ECD001187AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		77935D2C27C07ECD001187AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7706E3DC27C09A6E0032D408 /* 3D Space Invaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3D Space Invaders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7706E3DF27C09A6E0032D408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7706E3E127C09A6E0032D408 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		7706E3E327C09A6E0032D408 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		7706E3E527C09A6E0032D408 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		7706E3E727C09A6E0032D408 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		7706E3EA27C09A6E0032D408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7706E3EC27C09A6F0032D408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7706E3EF27C09A6F0032D408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		77935D1827C07ECB001187AE /* Frameworks */ = {
+		7706E3D927C09A6E0032D408 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +40,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		77935D1227C07ECB001187AE = {
+		7706E3D327C09A6D0032D408 = {
 			isa = PBXGroup;
 			children = (
-				77935D1D27C07ECB001187AE /* Space Invaders */,
-				77935D1C27C07ECB001187AE /* Products */,
+				7706E3DE27C09A6E0032D408 /* 3D Space Invaders */,
+				7706E3DD27C09A6E0032D408 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		77935D1C27C07ECB001187AE /* Products */ = {
+		7706E3DD27C09A6E0032D408 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77935D1B27C07ECB001187AE /* Space Invaders.app */,
+				7706E3DC27C09A6E0032D408 /* 3D Space Invaders.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		77935D1D27C07ECB001187AE /* Space Invaders */ = {
+		7706E3DE27C09A6E0032D408 /* 3D Space Invaders */ = {
 			isa = PBXGroup;
 			children = (
-				77935D1E27C07ECB001187AE /* AppDelegate.swift */,
-				77935D2027C07ECB001187AE /* SceneDelegate.swift */,
-				77935D2227C07ECB001187AE /* ViewController.swift */,
-				77935D2427C07ECB001187AE /* Main.storyboard */,
-				77935D2727C07ECD001187AE /* Assets.xcassets */,
-				77935D2927C07ECD001187AE /* LaunchScreen.storyboard */,
-				77935D2C27C07ECD001187AE /* Info.plist */,
+				7706E3DF27C09A6E0032D408 /* AppDelegate.swift */,
+				7706E3E127C09A6E0032D408 /* GameScene.sks */,
+				7706E3E327C09A6E0032D408 /* Actions.sks */,
+				7706E3E527C09A6E0032D408 /* GameScene.swift */,
+				7706E3E727C09A6E0032D408 /* GameViewController.swift */,
+				7706E3E927C09A6E0032D408 /* Main.storyboard */,
+				7706E3EC27C09A6F0032D408 /* Assets.xcassets */,
+				7706E3EE27C09A6F0032D408 /* LaunchScreen.storyboard */,
 			);
-			path = "Space Invaders";
+			path = "3D Space Invaders";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		77935D1A27C07ECB001187AE /* Space Invaders */ = {
+		7706E3DB27C09A6E0032D408 /* 3D Space Invaders */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77935D2F27C07ECD001187AE /* Build configuration list for PBXNativeTarget "Space Invaders" */;
+			buildConfigurationList = 7706E3F327C09A6F0032D408 /* Build configuration list for PBXNativeTarget "3D Space Invaders" */;
 			buildPhases = (
-				77935D1727C07ECB001187AE /* Sources */,
-				77935D1827C07ECB001187AE /* Frameworks */,
-				77935D1927C07ECB001187AE /* Resources */,
+				7706E3D827C09A6E0032D408 /* Sources */,
+				7706E3D927C09A6E0032D408 /* Frameworks */,
+				7706E3DA27C09A6E0032D408 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Space Invaders";
-			productName = "Space Invaders";
-			productReference = 77935D1B27C07ECB001187AE /* Space Invaders.app */;
+			name = "3D Space Invaders";
+			productName = "3D Space Invaders";
+			productReference = 7706E3DC27C09A6E0032D408 /* 3D Space Invaders.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		77935D1327C07ECB001187AE /* Project object */ = {
+		7706E3D427C09A6D0032D408 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					77935D1A27C07ECB001187AE = {
+					7706E3DB27C09A6E0032D408 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 77935D1627C07ECB001187AE /* Build configuration list for PBXProject "Space Invaders" */;
+			buildConfigurationList = 7706E3D727C09A6D0032D408 /* Build configuration list for PBXProject "3D Space Invaders" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +114,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 77935D1227C07ECB001187AE;
-			productRefGroup = 77935D1C27C07ECB001187AE /* Products */;
+			mainGroup = 7706E3D327C09A6D0032D408;
+			productRefGroup = 7706E3DD27C09A6E0032D408 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				77935D1A27C07ECB001187AE /* Space Invaders */,
+				7706E3DB27C09A6E0032D408 /* 3D Space Invaders */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		77935D1927C07ECB001187AE /* Resources */ = {
+		7706E3DA27C09A6E0032D408 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77935D2B27C07ECD001187AE /* LaunchScreen.storyboard in Resources */,
-				77935D2827C07ECD001187AE /* Assets.xcassets in Resources */,
-				77935D2627C07ECB001187AE /* Main.storyboard in Resources */,
+				7706E3EB27C09A6E0032D408 /* Main.storyboard in Resources */,
+				7706E3E227C09A6E0032D408 /* GameScene.sks in Resources */,
+				7706E3ED27C09A6F0032D408 /* Assets.xcassets in Resources */,
+				7706E3F027C09A6F0032D408 /* LaunchScreen.storyboard in Resources */,
+				7706E3E427C09A6E0032D408 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		77935D1727C07ECB001187AE /* Sources */ = {
+		7706E3D827C09A6E0032D408 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77935D2327C07ECB001187AE /* ViewController.swift in Sources */,
-				77935D1F27C07ECB001187AE /* AppDelegate.swift in Sources */,
-				77935D2127C07ECB001187AE /* SceneDelegate.swift in Sources */,
+				7706E3E627C09A6E0032D408 /* GameScene.swift in Sources */,
+				7706E3E827C09A6E0032D408 /* GameViewController.swift in Sources */,
+				7706E3E027C09A6E0032D408 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		77935D2427C07ECB001187AE /* Main.storyboard */ = {
+		7706E3E927C09A6E0032D408 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				77935D2527C07ECB001187AE /* Base */,
+				7706E3EA27C09A6E0032D408 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		77935D2927C07ECD001187AE /* LaunchScreen.storyboard */ = {
+		7706E3EE27C09A6F0032D408 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				77935D2A27C07ECD001187AE /* Base */,
+				7706E3EF27C09A6F0032D408 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +172,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		77935D2D27C07ECD001187AE /* Debug */ = {
+		7706E3F127C09A6F0032D408 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		77935D2E27C07ECD001187AE /* Release */ = {
+		7706E3F227C09A6F0032D408 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +288,7 @@
 			};
 			name = Release;
 		};
-		77935D3027C07ECD001187AE /* Debug */ = {
+		7706E3F427C09A6F0032D408 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -290,10 +296,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Space Invaders/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,7 +307,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.btechgames.Space-Invaders";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.btechgames.-D-Space-Invaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -309,7 +315,7 @@
 			};
 			name = Debug;
 		};
-		77935D3127C07ECD001187AE /* Release */ = {
+		7706E3F527C09A6F0032D408 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -317,10 +323,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Space Invaders/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.btechgames.Space-Invaders";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.btechgames.-D-Space-Invaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,25 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		77935D1627C07ECB001187AE /* Build configuration list for PBXProject "Space Invaders" */ = {
+		7706E3D727C09A6D0032D408 /* Build configuration list for PBXProject "3D Space Invaders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77935D2D27C07ECD001187AE /* Debug */,
-				77935D2E27C07ECD001187AE /* Release */,
+				7706E3F127C09A6F0032D408 /* Debug */,
+				7706E3F227C09A6F0032D408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77935D2F27C07ECD001187AE /* Build configuration list for PBXNativeTarget "Space Invaders" */ = {
+		7706E3F327C09A6F0032D408 /* Build configuration list for PBXNativeTarget "3D Space Invaders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77935D3027C07ECD001187AE /* Debug */,
-				77935D3127C07ECD001187AE /* Release */,
+				7706E3F427C09A6F0032D408 /* Debug */,
+				7706E3F527C09A6F0032D408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 77935D1327C07ECB001187AE /* Project object */;
+	rootObject = 7706E3D427C09A6D0032D408 /* Project object */;
 }
