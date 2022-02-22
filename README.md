@@ -7,6 +7,12 @@ Return of the invaders will be a re-creation of the original Space Invaders but 
 * Xcode
 * SwiftUI
 
+## Alpha Release
+* Create player that can be controlled by swiping
+* Give player functionality to shoot by tapping
+* Tested to Implemented an enemy that moves and dies if it's not 
+* Found placeholder sprites to use before we implement 3D model
+
 ## Developer
 Team Titan:
 
