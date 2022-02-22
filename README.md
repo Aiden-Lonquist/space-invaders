@@ -7,7 +7,7 @@ Return of the invaders will be a re-creation of the original Space Invaders but 
 * Xcode
 * SwiftUI
 
-## Develop
+## Developer
 Team Titan:
 
 * Aiden
