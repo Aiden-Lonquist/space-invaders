@@ -10,7 +10,7 @@ Return of the invaders will be a re-creation of the original Space Invaders but 
 ## Alpha Release
 * Created player that can be controlled by swiping
 * Given player functionality for shooting by tapping
-* Tested to Implemented an enemy that if it is moving and dies after get hit
+* Tested to Implemented an enemy that if it is moving and dies after it gets hit
 * Found placeholder sprites to use before we implement 3D model
 
 ## Developer
