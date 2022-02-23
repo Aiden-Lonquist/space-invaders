@@ -38,6 +38,7 @@ class GameScene: SKScene {
         
         player.setScale(1)
         player.position = CGPoint(x: self.size.width/2, y: self.size.height * 0.2)
+        player.zPosition = 2
         self.addChild(player)
     }
     
@@ -57,5 +58,31 @@ class GameScene: SKScene {
                 player.position.x = gameArea.minX
             }
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        Use if we want to get the position of the tap to send the bullet there.
+//        guard let touch = touches.first else {
+//            return
+//        }
+//        let touchPosition = touch.location(in: self)
+        
+        tapToShoot()
+    }
+    
+    func tapToShoot() {
+        let bullet = SKSpriteNode(imageNamed: "bullet")
+        bullet.position = CGPoint(x: player.position.x, y: player.position.y)
+        bullet.setScale(0.2)
+        bullet.zPosition = 1
+        
+        self.addChild(bullet)
+        
+        let moveUp = SKAction.moveBy(x: 0, y: 1000, duration: 1)
+        let removeSprite = SKAction.removeFromParent()
+        
+        let shotSequence = SKAction.sequence([moveUp, removeSprite])
+
+        bullet.run(shotSequence)
     }
 }
