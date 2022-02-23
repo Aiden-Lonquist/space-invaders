@@ -11,6 +11,7 @@ import GameplayKit
 class GameScene: SKScene {
     
     let player = SKSpriteNode(imageNamed: "ship")
+    let enemy = SKSpriteNode(imageNamed: "ship")
     
     var gameArea: CGRect
     
@@ -40,6 +41,28 @@ class GameScene: SKScene {
         player.position = CGPoint(x: self.size.width/2, y: self.size.height * 0.2)
         player.zPosition = 2
         self.addChild(player)
+        
+        enemy.setScale(1)
+        enemy.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.8)
+        enemy.zPosition = 2
+        self.addChild(enemy)
+        
+        let moveLeft = SKAction.move(to: CGPoint(
+            x: self.size.width * 0.2,
+            y: self.size.height * 0.8),
+            duration: 5
+        );
+        let moveRight = SKAction.move(to: CGPoint(
+            x: self.size.width * 0.8,
+            y: self.size.height * 0.8),
+            duration: 5
+        );
+        let moveDown = SKAction.move(to: CGPoint(
+            x: enemy.position.x,
+            y: enemy.position.y - (self.size.height * 0.05)),
+            duration: 1
+        )
+        enemy.run(SKAction.repeatForever(SKAction.sequence([moveLeft, moveRight])))
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
