@@ -11,7 +11,7 @@ import GameplayKit
 class GameScene: SKScene {
     
     let player = SKSpriteNode(imageNamed: "ship")
-    let enemy = SKSpriteNode(imageNamed: "ship")
+    let enemy = SKSpriteNode(imageNamed: "enemy")
     
     var gameArea: CGRect
     
@@ -24,6 +24,16 @@ class GameScene: SKScene {
         
         super.init(size: size)
         
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        enumerateChildNodes(withName: "bullet") { node, _ in
+            let bullet = node as! SKSpriteNode
+            if bullet.frame.intersects(self.enemy.frame) {
+                self.enemy.removeFromParent()
+                bullet.removeFromParent()
+            }
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -42,7 +52,7 @@ class GameScene: SKScene {
         player.zPosition = 2
         self.addChild(player)
         
-        enemy.setScale(1)
+        enemy.setScale(0.2)
         enemy.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.8)
         enemy.zPosition = 2
         self.addChild(enemy)
@@ -98,10 +108,11 @@ class GameScene: SKScene {
         bullet.position = CGPoint(x: player.position.x, y: player.position.y)
         bullet.setScale(0.2)
         bullet.zPosition = 1
+        bullet.name = "bullet"
         
         self.addChild(bullet)
         
-        let moveUp = SKAction.moveBy(x: 0, y: 1000, duration: 1)
+        let moveUp = SKAction.moveBy(x: 0, y: 1500, duration: 1)
         let removeSprite = SKAction.removeFromParent()
         
         let shotSequence = SKAction.sequence([moveUp, removeSprite])
