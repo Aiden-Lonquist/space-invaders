@@ -144,14 +144,14 @@ class GameScene: SKScene {
     }
     
     func checkCollision(grid_height: CGFloat, grid_width: CGFloat) {
-        let enemy_grid_posX = floor(enemy.position.x/grid_width)
+        let enemy_grid_posX = round(enemy.position.x/grid_width)
         let enemy_grid_posY = floor(enemy.position.y/grid_height)
         let enemy_grid_pos = CGPoint(x: enemy_grid_posX, y: enemy_grid_posY)
         //print("enemy position:", enemy_grid_pos)
         
         
         if let bullet_obj = childNode(withName: "bullet") {
-            let bullet_grid_posX = floor(bullet_obj.position.x/grid_width)
+            let bullet_grid_posX = round(bullet_obj.position.x/grid_width)
             let bullet_grid_posY = floor(bullet_obj.position.y/grid_height)
             let bullet_grid_pos = CGPoint(x: bullet_grid_posX, y: bullet_grid_posY)
             //print("bullet position", bullet_grid_pos)
