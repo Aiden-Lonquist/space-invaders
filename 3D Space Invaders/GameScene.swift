@@ -17,6 +17,12 @@ class GameScene: SKScene {
     
     var grid_height = 400.0;
     var grid_width = 200.0;
+    
+    var score = 0;
+    
+
+    
+    
 
     
     override init(size: CGSize) {
@@ -26,8 +32,6 @@ class GameScene: SKScene {
         let margin = (size.width - playableWidth) / 2
         gameArea = CGRect(x: margin, y: 0, width: playableWidth, height: size.height)
         
-        
-        let bullet_array: [SKSpriteNode] = []
         
         //print("each grid space is: ", grid_widthPX/grid_width, "by", grid_heightPX/grid_height)
         
@@ -43,6 +47,15 @@ class GameScene: SKScene {
 //                bullet.removeFromParent()
 //            }
             self.checkCollision(grid_height: grid_height, grid_width: grid_width)
+            let label = UILabel(frame: CGRect(x: -50, y: 0, width: 250, height: 100))
+            label.textColor = .white;
+            label.textAlignment = .center;
+            label.numberOfLines = 2;
+            label.tag = 1;
+            view?.addSubview(label);
+            updateScore(label: label)
+            
+            
         }
     }
     
@@ -131,14 +144,14 @@ class GameScene: SKScene {
     }
     
     func checkCollision(grid_height: CGFloat, grid_width: CGFloat) {
-        let enemy_grid_posX = floor(enemy.position.x/grid_width)
+        let enemy_grid_posX = round(enemy.position.x/grid_width)
         let enemy_grid_posY = floor(enemy.position.y/grid_height)
         let enemy_grid_pos = CGPoint(x: enemy_grid_posX, y: enemy_grid_posY)
         //print("enemy position:", enemy_grid_pos)
         
         
         if let bullet_obj = childNode(withName: "bullet") {
-            let bullet_grid_posX = floor(bullet_obj.position.x/grid_width)
+            let bullet_grid_posX = round(bullet_obj.position.x/grid_width)
             let bullet_grid_posY = floor(bullet_obj.position.y/grid_height)
             let bullet_grid_pos = CGPoint(x: bullet_grid_posX, y: bullet_grid_posY)
             //print("bullet position", bullet_grid_pos)
@@ -146,9 +159,22 @@ class GameScene: SKScene {
             if enemy_grid_pos == bullet_grid_pos {
                 self.enemy.removeFromParent()
                 bullet_obj.removeFromParent()
+                increaseScore()
                 print("bullet collided with enemy at: ", enemy_grid_pos)
             }
         }
+    }
+    
+    func updateScore(label: UILabel) {
+        //update the label's values
+        label.text = "Score: \(score)"
         
+        //remove the old label so it doesn't draw over itself
+        view?.viewWithTag(1)?.removeFromSuperview()
+        view?.addSubview(label)
+    }
+    
+    func increaseScore() {
+        score+=1
     }
 }
