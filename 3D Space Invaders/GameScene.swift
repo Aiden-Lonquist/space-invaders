@@ -15,6 +15,10 @@ class GameScene: SKScene {
     
     var gameArea: CGRect
     
+    var grid_height = 400.0;
+    var grid_width = 200.0;
+
+    
     override init(size: CGSize) {
         
         let maxAspectRatio: CGFloat = 16.0/9.0
@@ -22,17 +26,23 @@ class GameScene: SKScene {
         let margin = (size.width - playableWidth) / 2
         gameArea = CGRect(x: margin, y: 0, width: playableWidth, height: size.height)
         
+        
+        let bullet_array: [SKSpriteNode] = []
+        
+        //print("each grid space is: ", grid_widthPX/grid_width, "by", grid_heightPX/grid_height)
+        
         super.init(size: size)
         
     }
     
     override func update(_ currentTime: TimeInterval) {
-        enumerateChildNodes(withName: "bullet") { node, _ in
+        enumerateChildNodes(withName: "bullet") { [self] node, _ in
             let bullet = node as! SKSpriteNode
-            if bullet.frame.intersects(self.enemy.frame) {
-                self.enemy.removeFromParent()
-                bullet.removeFromParent()
-            }
+//            if bullet.frame.intersects(self.enemy.frame) {
+//                self.enemy.removeFromParent()
+//                bullet.removeFromParent()
+//            }
+            self.checkCollision(grid_height: grid_height, grid_width: grid_width)
         }
     }
     
@@ -118,5 +128,27 @@ class GameScene: SKScene {
         let shotSequence = SKAction.sequence([moveUp, removeSprite])
 
         bullet.run(shotSequence)
+    }
+    
+    func checkCollision(grid_height: CGFloat, grid_width: CGFloat) {
+        let enemy_grid_posX = floor(enemy.position.x/grid_width)
+        let enemy_grid_posY = floor(enemy.position.y/grid_height)
+        let enemy_grid_pos = CGPoint(x: enemy_grid_posX, y: enemy_grid_posY)
+        //print("enemy position:", enemy_grid_pos)
+        
+        
+        if let bullet_obj = childNode(withName: "bullet") {
+            let bullet_grid_posX = floor(bullet_obj.position.x/grid_width)
+            let bullet_grid_posY = floor(bullet_obj.position.y/grid_height)
+            let bullet_grid_pos = CGPoint(x: bullet_grid_posX, y: bullet_grid_posY)
+            //print("bullet position", bullet_grid_pos)
+            
+            if enemy_grid_pos == bullet_grid_pos {
+                self.enemy.removeFromParent()
+                bullet_obj.removeFromParent()
+                print("bullet collided with enemy at: ", enemy_grid_pos)
+            }
+        }
+        
     }
 }
