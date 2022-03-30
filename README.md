@@ -51,6 +51,6 @@ Team Titan:
 
 ### Sound effect
 
-*[Shoot Sound](https://freesound.org/people/Bird_man/sounds/317136/)
+* [Shoot Sound](https://freesound.org/people/Bird_man/sounds/317136/)
 
-*[Hit Sound](https://freesound.org/people/InspectorJ/sounds/448226/)
+* [Hit Sound](https://freesound.org/people/InspectorJ/sounds/448226/)
