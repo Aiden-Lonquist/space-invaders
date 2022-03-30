@@ -7,6 +7,7 @@
 
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 class GameScene: SKScene {
     
@@ -20,7 +21,7 @@ class GameScene: SKScene {
     
     var score = 0;
     
-
+    var audioPlayer: AVAudioPlayer?
     
     
 
@@ -141,6 +142,16 @@ class GameScene: SKScene {
         let shotSequence = SKAction.sequence([moveUp, removeSprite])
 
         bullet.run(shotSequence)
+        
+        let pathToSound = Bundle.main.path(forResource: "shoot", ofType: "wav")!
+        let url = URL(fileURLWithPath: pathToSound)
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            print("ERROR: couldn't play sound")
+        }
     }
     
     func checkCollision(grid_height: CGFloat, grid_width: CGFloat) {
@@ -156,10 +167,21 @@ class GameScene: SKScene {
             let bullet_grid_pos = CGPoint(x: bullet_grid_posX, y: bullet_grid_posY)
             //print("bullet position", bullet_grid_pos)
             
-            if enemy_grid_pos == bullet_grid_pos {
+            if (enemy_grid_pos == bullet_grid_pos && self.enemy.parent != nil) {
                 self.enemy.removeFromParent()
                 bullet_obj.removeFromParent()
                 increaseScore()
+                
+                let pathToSound = Bundle.main.path(forResource: "hit", ofType: "wav")!
+                let url = URL(fileURLWithPath: pathToSound)
+                
+                do {
+                    audioPlayer = try AVAudioPlayer(contentsOf: url)
+                    audioPlayer?.play()
+                } catch {
+                    print("ERROR: couldn't play sound")
+                }
+                
                 print("bullet collided with enemy at: ", enemy_grid_pos)
             }
         }
