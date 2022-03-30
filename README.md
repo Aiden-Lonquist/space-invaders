@@ -13,12 +13,12 @@ Player are able to:
     
     
 
-## Development Tools
+## Development Tools & Support
 
 * IDE/Editor: Xcode
 * Programming language: SwiftUI/C++/Objective-C
-* Available: All iOS System/Platform
-* Best Available: at least iPhone X above 
+* Available: iOS 12 at least above
+* Best Available mobile: at least iPhone XS above 
 
 ## Alpha Release
 * Created player that can be controlled by swiping
