@@ -1,7 +1,7 @@
 # Space-Invaders
-![Cocoapods platforms](https://img.shields.io/cocoapods/p/ios?color=gree&label=Platform&logo=apple)
+![Cocoapods platforms](https://img.shields.io/cocoapods/p/ios?color=gree&label=Platform&logo=apple) ![NPM](https://img.shields.io/npm/l/l)
 
-![NPM](https://img.shields.io/npm/l/l)
+
 
 
 ## Description
