@@ -47,8 +47,10 @@ Team Titan:
 * Parker
 * Cole
 
-## Link to Sound Assets
+## Credit & Reference
 
-[Shoot Sound](https://freesound.org/people/Bird_man/sounds/317136/)
+### Sound effect
 
-[Hit Sound](https://freesound.org/people/InspectorJ/sounds/448226/)
+*[Shoot Sound](https://freesound.org/people/Bird_man/sounds/317136/)
+
+*[Hit Sound](https://freesound.org/people/InspectorJ/sounds/448226/)
