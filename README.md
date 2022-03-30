@@ -1,5 +1,7 @@
 # Space-Invaders
 ![Cocoapods platforms](https://img.shields.io/cocoapods/p/ios?color=gree&label=Platform&logo=apple)
+![NPM](https://img.shields.io/npm/l/l)
+
 
 ## Description
 Return of the invaders will be a re-creation of the original Space Invaders but reimagined in 3D. The player will dodge an onslaught of incoming alien lasers while also fireing back in an attempt to eliminate the alien space crafts before they reach the player. As the game progresses the aliens will begin to move faster and shoot more frequently
